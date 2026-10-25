@@ -45,7 +45,7 @@ Images\Aurora.Skin.Scenes.Settings.About.Aurora.Logo.png
 Images\Aurora.Skin.Scenes.Settings.About.Phoenix.Logo.png
 Images\Aurora.Skin.Scenes.Settings.Artwork.About.XYZ.Paracrypt.png
 Images\Aurora.Skin.Scenes.Splash.Logo.Alternate.png
-Images\Background\Aurora.Background.jpg
+Images\Background\Traylor.Background.png
 Images\Icons\DeviceSelector\Aurora.Skin.Dialogs.Select.Device.Icon.Artwork.ConnectX.Disabled.Blur.png
 Images\Icons\DeviceSelector\Aurora.Skin.Dialogs.Select.Device.Icon.Artwork.ConnectX.Disabled.Focus.png
 Images\Icons\DeviceSelector\Aurora.Skin.Dialogs.Select.Device.Icon.Artwork.ConnectX.Enabled.Blur.png

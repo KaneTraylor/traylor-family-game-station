@@ -128,7 +128,7 @@
     </Background>
     <WallpaperList>
       <Instance id="WallpaperList">
-        <DEFAULTBKG>Images\Background\Aurora.Background.jpg</DEFAULTBKG>
+        <DEFAULTBKG>Images\Background\Traylor.Background.png</DEFAULTBKG>
         <MISSINGLARGE>Images\Icons\Thumbnails\Aurora.Skin.Missing.Thumbnail.Large.png</MISSINGLARGE>
         <MISSINGSMALL>Images\Icons\Thumbnails\Aurora.Skin.Missing.Thumbnail.Small.png</MISSINGSMALL>
       </Instance>

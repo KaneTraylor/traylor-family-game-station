@@ -1,0 +1,13 @@
+# Normalise text so Windows/WSL checkouts don't show whole-file CRLF diffs
+* text=auto eol=lf
+
+# Console artifacts and binary skin sources
+*.xzp binary
+*.xur binary
+*.xpr binary
+*.xbg binary
+*.dds binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.ver binary

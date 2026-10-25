@@ -8,8 +8,9 @@ A custom Aurora 0.7b interface for the Traylor family Xbox 360. The visual direc
 - Generated 16:9 background and branded splash concepts
 - Console-safe 1280x720 background export
 - Verified Liquid Glass 1.0.0 package imported as an attributed visual/structural base
-- No editable XUI/XUR skin source yet
-- No custom XZP build yet
+- Base skin unpacked into `src/skin/` with `tools/xzp.py` (extract and pack, byte-identical round trip)
+- First `TraylorGlass.xzp` build: renamed skin metadata, Traylor wallpaper as the default background, Traylor wordmark on the splash screen, matching `Traylor Glass.cfljson` layout
+- Deployed to the target Xbox 360 for visual validation; `.xur` scenes are still the unmodified upstream compiled files
 
 ## Repository layout
 
@@ -30,13 +31,20 @@ vendor/                     Attributed upstream material used as a base
 
 Keep editable sources under `src/`, generated console artifacts under `aurora/`, and reference exports under `assets/`. Do not commit Xbox SDK binaries, proprietary Microsoft tools, console keys, NAND dumps, profiles, or other device-specific data.
 
+## Test the preview
+
+1. In Aurora, press **B**, open **Skin -> Change**, and select **Traylor Glass**. Restart Aurora if prompted.
+2. Press **B -> View -> Theme**, select **Traylor Glass**, and press **A**.
+3. Refresh the background list with **X** and select **Traylor Family Game Station**.
+
+Aurora should remember these selections on later launches. `Default.xzp` remains installed as the recovery skin.
+
 ## Next milestone
 
-1. Import an Aurora 0.7b glass-style skin as an attributed base.
-2. Establish the color, typography, spacing, and glass-material tokens.
-3. Build the main dashboard and matching one-row CoverFlow layout.
-4. Restyle menus and dialogs.
-5. Add the branded splash and verify it on real hardware.
+1. Validate the first branded package on real hardware.
+2. Refine the main dashboard and one-row CoverFlow layout from test feedback.
+3. Restyle menus, dialogs, game details, and utilities.
+4. Rebuild scene-level `.xur` files when suitable XUI authoring tools are available.
 
 ## Upstream base
 

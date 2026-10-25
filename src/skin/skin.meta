@@ -1,10 +1,10 @@
 {
 	"metaver" : 1,
-	"skinname" : "Liquid Glass",
-	"author" : "Liquid Glass",
+	"skinname" : "Traylor Glass",
+	"author" : "Traylor Family",
 	"revision" : 1,
-	"description" : "iOS 26 style Liquid Glass: frosted capsules over a vivid wallpaper. Use with the Liquid Glass coverflow layout.",
-	"creationdate" : "2026-10-12",
+	"description" : "Traylor Family Game Station: dark glass over midnight navy with a single row of covers. Use with the Traylor Glass coverflow layout. Based on Liquid Glass by ammarsi274.",
+	"creationdate" : "2026-10-24",
 	"updateid" : "",
 	"auroraver" : "0.7"
 }

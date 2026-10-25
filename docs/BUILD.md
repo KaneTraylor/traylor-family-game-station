@@ -16,6 +16,21 @@ python3 tools/xzp.py pack    src/skin build/TraylorGlass.xzp
 
 `extract` writes `src/skin/manifest.txt` with the original entry order; `pack` follows it, so repacking an untouched tree reproduces the upstream file byte for byte. New files are appended in sorted order. Entry names are limited to 255 UTF-16 characters and use backslashes inside the package.
 
+The console build is `aurora/Skins/TraylorGlass.xzp`; rebuild it after any change under `src/skin/`:
+
+```sh
+python3 tools/xzp.py pack src/skin aurora/Skins/TraylorGlass.xzp
+Copy-Item "src/layout/Traylor Glass.cfljson" "aurora/Media/Layouts/Traylor Glass.cfljson"
+```
+
+`tools/render-wordmark.ps1` regenerates the splash wordmark (`Images/Aurora.Skin.Scenes.Splash.Logo.Alternate.png`) from the skin's bundled Inter fonts using Windows PowerShell and System.Drawing; it also drops a dark-backed preview in `build/`.
+
+Create the ignored test archive after rebuilding the skin and layout:
+
+```powershell
+Compress-Archive -LiteralPath aurora -DestinationPath dist/Traylor-Family-Game-Station-preview.zip -CompressionLevel Optimal -Force
+```
+
 Still needed for scene-level changes:
 
 - Xbox 360 XUI authoring tooling for `.xui` to `.xur` export
@@ -27,7 +42,7 @@ These tools are not committed to this repository. Keep proprietary SDK component
 
 - `skin.meta` — name, author, description shown in Aurora's skin picker; `skin.xml` — font registration and per-control texture mapping
 - `Images/PolarGlass/` — the glass material: `HomeChrome.png` (1280x720 home overlay), `DetailsBackdrop.png` (details screen panels), `Ground.png`, capsule and button pieces, `ng/rr_*.png` rounded-rect nine-grid slices
-- `Images/Background/Aurora.Background.jpg` — default wallpaper when game backgrounds are off
+- `Images/Background/Traylor.Background.png` — default wallpaper when game backgrounds are off
 - `Images/Aurora.Skin.Scenes.Splash.Logo.Alternate.png` — 900x235 splash wordmark slot for the Traylor branding
 - `Images/Visuals/` — stock control states (buttons, checkboxes, sliders, gamepad glyphs)
 - `Fonts/` — Inter Regular/Medium/SemiBold/Bold/Light (OFL)

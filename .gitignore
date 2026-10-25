@@ -1,0 +1,21 @@
+# Tooling and generated intermediates
+build/
+dist/
+tmp/
+*.bak
+*.staged
+
+# Never commit console- or user-specific material
+*.bin
+*.key
+*.nand
+CPUKey.txt
+DVDKey.txt
+Content/
+BadUpdatePayload/
+
+# Proprietary tools and SDKs
+tools/private/
+sdk/
+vendor/*.zip
+

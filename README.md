@@ -34,8 +34,9 @@ Keep editable sources under `src/`, generated console artifacts under `aurora/`,
 ## Test the preview
 
 1. In Aurora, press **B**, open **Skin -> Change**, and select **Traylor Glass**. Restart Aurora if prompted.
-2. Press **B -> View -> Theme**, select **Traylor Glass**, and press **A**.
-3. Refresh the background list with **X** and select **Traylor Family Game Station**.
+2. Open **B -> Skin -> Options** and enable **Alternate Splash Screen** to show the Traylor wordmark on startup.
+3. Press **B -> View -> Theme**, select **Traylor Glass**, and press **A**.
+4. Refresh the background list with **X** and select **Traylor Family Game Station**.
 
 Aurora should remember these selections on later launches. `Default.xzp` remains installed as the recovery skin.
 
